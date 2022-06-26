@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Pyidaungsu';
+    src: local('Pyidaungsu'), url('./src/fonts/Pyidaungsu-1.8.3_Regular.woff') format('woff'), url('./src/fonts/Pyidaungsu-1.8.3_Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Pyidaungsu';
+    src: local('Pyidaungsu'), url('./src/fonts/Pyidaungsu-1.8.3_Bold.woff') format('woff'), url('./src/fonts/Pyidaungsu-1.8.3_Bold.ttf') format('ttf');
+    font-weight: bold;
+}
+
+/* general styling */
+:root {
+    --smaller: .75;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    align-items: center;
+    background-color: #001220;
+    display: flex;
+    font-family: 'Pyidaungsu' !important;
+}
+
+.container {
+    color: rgba(255, 255, 255, 0.904);
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+li {
+    /* border: 1px solid #ddd; */
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: .3em;
+    text-shadow: 1px 1px 2px black, 0 0 25px #1774bb, 0 0 5px #023c69;
+}
+
+li span {
+    /* display: block; */
+    margin-right: .3em;
+    font-size: 1.5em;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#dope {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+#subline {
+    font-style: italic;
+}
