@@ -72,3 +72,15 @@ li span {
 #subline {
     font-style: italic;
 }
+
+@media (max-width: 641px) {
+    h3 {
+        font-size: .7rem;
+    }
+    li span {
+        font-size: .7em;
+    }
+    li {
+        font-size: .7em;
+    }
+}
