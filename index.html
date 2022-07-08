@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOPE - Khit</title>
     <link rel="icon" type="image/x-icon" href="./src/img/khit.png">
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css" />
 
     <meta property="og:title" content="DOPE - Khit 💿">
     <meta property="og:description" content="DOPE's Khit album countdown ⏱️">
-    <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXM4gvDIFLcK0-gVMWMkfvzfr7rFxfSXMOdhgysmgwqlFaZvJRDLfz6n3y14xyGMhWPG7q6RjGbUCnq3C0_j6gWRH4wAz1_QnhXtXCbhXOxG56D6qE14iqkIIVNlbGzc9lWSe8lcykPglb5cJ4SzA-HPI1en01dNRgITbhDAmWJy9LXT0jiPutUg2sow/s1200/thumb.jpg">
+    <meta property="og:image"
+        content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXM4gvDIFLcK0-gVMWMkfvzfr7rFxfSXMOdhgysmgwqlFaZvJRDLfz6n3y14xyGMhWPG7q6RjGbUCnq3C0_j6gWRH4wAz1_QnhXtXCbhXOxG56D6qE14iqkIIVNlbGzc9lWSe8lcykPglb5cJ4SzA-HPI1en01dNRgITbhDAmWJy9LXT0jiPutUg2sow/s1200/thumb.jpg">
 </head>
 
 <body>
@@ -26,7 +27,8 @@
             </ul>
         </div>
         <h3>Album ယိုနဝ်ꩻထွာဒျာႏနီသွဉ်သီး DOPE အရီးသွတ် "ခွေႏ" သွူနယ်ဩ။</h3>
-        <h3>မိဉ်ႏတွိုႏဝါႏဆိုႏလာဆန်ꩻ တဆီနီꩻနဝ်ꩻ အီႏထန်ႏလွဉ်နဝ်ꩻမ့ꩻ မဲ့ꩻဒင်ႏလွေꩻဖေႏ Spotify, Apple Music, iTunes, SoundCloud, Facebook တွမ်ႏ Youtube လောင်းဖုံႏဩ။</h3>
+        <h3>မိဉ်ႏတွိုႏဝါႏဆိုႏလာဆန်ꩻ တဆီနီꩻနဝ်ꩻ အီႏထန်ႏလွဉ်နဝ်ꩻမ့ꩻ မဲ့ꩻဒင်ႏလွေꩻဖေႏ Spotify, Apple Music, iTunes,
+            SoundCloud, Facebook တွမ်ႏ Youtube လောင်းဖုံႏဩ။</h3>
         <h3 id="dope">DOPE</h3>
         <h3 id="subline">(We will bring the new vibes)</h3>
     </div>
@@ -59,22 +61,22 @@
             // Find the distance between now and the count down date
             var distance = countDownDate - now;
 
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Output the result in an element with id="demo"
-            setText(myDay, days);
-            setText(myHour, hours);
-            setText(myMin, minutes);
-            setText(mySec, seconds);
-
             // If the count down is over, write some text 
             if (distance < 0) {
                 clearInterval(x);
                 window.location.href = "https://callusdope.com/khit";
+            } else {
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="demo"
+                setText(myDay, days);
+                setText(myHour, hours);
+                setText(myMin, minutes);
+                setText(mySec, seconds);
             }
         }
         count_down();
